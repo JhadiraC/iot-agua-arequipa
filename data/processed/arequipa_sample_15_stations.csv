@@ -1,0 +1,169 @@
+watershed,station_id,location,latitude,longitude,sample_date,water_temp_c,ph,dissolved_oxygen_mg_l,electrical_conductivity_us_cm
+Camaná,QAroc1,"Quebrada Arocpampa, upstream of the Laguna Huisca Huisca",-14.993888,-72.300726,2012-10-29,14.7,8.14,6.25,529.0
+Camaná,QAroc1,"Quebrada Arocpampa, upstream of the Laguna Huisca Huisca",-14.993888,-72.300726,2013-11-07,14.8,8.32,5.11,729.1
+Camaná,QAroc1,"Quebrada Arocpampa, upstream of the Laguna Huisca Huisca",-14.993888,-72.300726,2014-03-27,12.0,7.44,6.05,164.2
+Camaná,QAroc1,"Quebrada Arocpampa, upstream of the Laguna Huisca Huisca",-14.993888,-72.300726,2014-09-02,14.5,7.6,7.39,585.0
+Camaná,QElsa1,"Quebrada El Salto, downstream of Laguna Chumille - Arcata",-14.951973,-72.324961,2012-10-29,9.9,7.4,6.3,30.0
+Camaná,QElsa1,"Quebrada El Salto, downstream of Laguna Chumille - Arcata",-14.951973,-72.324961,2013-11-07,13.0,7.97,6.4,24.82
+Camaná,QElsa1,"Quebrada El Salto, downstream of Laguna Chumille - Arcata",-14.951973,-72.324961,2014-03-27,9.8,8.42,6.25,24.56
+Camaná,QElsa1,"Quebrada El Salto, downstream of Laguna Chumille - Arcata",-14.951973,-72.324961,2014-09-02,8.4,7.7,6.47,336.0
+Camaná,RAnda1,"Río Andagua, upstream from Laguna Chachas",-15.523317,-72.277201,2012-10-30,9.5,7.69,7.36,127.4
+Camaná,RAnda1,"Río Andagua, upstream from Laguna Chachas",-15.523317,-72.277201,2013-11-19,14.57,7.72,7.12,233.2
+Camaná,RAnda1,"Río Andagua, upstream from Laguna Chachas",-15.523317,-72.277201,2014-03-25,14.8,9.02,6.72,84.75
+Camaná,RAnda1,"Río Andagua, upstream from Laguna Chachas",-15.523317,-72.277201,2014-09-01,13.3,8.86,7.64,320.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2010-10-21,21.5,8.34,7.33,1350.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2011-08-24,17.9,8.21,7.44,1498.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2011-10-27,20.6,8.0,7.85,1329.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2011-12-07,21.1,9.0,5.74,1373.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2012-03-28,20.4,8.2,5.9,1350.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2012-08-24,19.4,7.76,5.12,1367.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2013-01-24,19.4,8.185,6.86,1188.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2013-03-06,23.8,8.04,6.88,821.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2013-10-17,20.1,7.93,7.29,1354.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2014-02-03,22.1,8.18,6.45,1305.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2014-02-03,22.1,8.18,6.45,639.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2014-03-30,18.5,8.199,7.5,1327.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2014-05-06,18.5,8.026,7.55,1298.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2015-09-17,19.7,8.29,7.31,1333.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2016-04-13,19.9,8.15,7.06,1253.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2017-09-26,18.8,9.01,7.28,1315.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2018-04-04,19.7,9.3,7.21,1061.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2018-09-10,19.9,8.9,7.16,1388.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2019-04-29,21.9,8.3,6.82,1292.0
+Chili,QAñas1,Quebrada Añashuayco,-16.42553,-71.675134,2019-08-26,18.9,8.21,7.9,1305.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2011-08-23,9.2,8.29,8.85,311.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2011-10-25,16.1,8.8,9.28,247.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2011-12-06,15.6,7.7,7.63,190.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2012-03-27,16.1,7.9,6.9,320.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2012-08-23,11.7,8.33,8.27,224.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2013-01-21,14.6,7.966,8.02,173.5
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2013-03-04,18.0,7.64,6.76,135.5
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2013-10-15,16.0,8.36,8.69,221.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2014-01-31,15.11,8.032,7.97,194.3
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2014-01-31,15.11,8.032,7.97,194.3
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2014-03-28,18.5,8.409,7.56,292.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2014-05-03,15.6,8.625,8.04,342.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2014-10-28,18.3,8.344,7.5,543.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2015-09-16,14.6,8.58,8.33,231.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2016-04-12,16.5,8.06,7.57,259.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2017-09-20,14.9,8.77,7.43,307.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2018-04-04,17.2,8.0,8.04,223.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2018-09-06,13.1,8.6,8.85,241.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2019-04-25,18.9,8.1,7.32,271.0
+Chili,RChil4,Río Chili,-16.417843,-71.552645,2019-08-26,14.0,8.3,7.45,308.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2011-08-24,10.9,7.84,8.34,651.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2011-10-27,15.4,8.2,9.37,583.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2011-12-07,19.2,8.4,4.8,608.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2012-03-28,21.2,8.1,5.9,600.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2012-08-24,12.2,7.65,8.72,647.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2013-01-21,17.5,7.952,7.64,333.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2013-03-06,19.1,7.89,6.84,299.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2013-10-15,24.8,7.69,6.37,729.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2014-01-31,20.1,6.77,6.08,467.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2014-01-31,20.1,6.77,6.08,467.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2014-03-29,18.6,8.03,7.28,736.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2014-05-05,17.4,7.969,6.7,851.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2014-10-29,17.8,7.914,7.06,873.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2015-09-17,15.1,8.09,7.6,754.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2016-04-13,19.6,7.89,7.44,645.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2017-09-22,21.6,7.88,7.05,744.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2018-04-04,18.0,8.3,7.61,495.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2018-09-06,15.9,8.5,7.89,670.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2019-04-25,22.3,8.1,6.16,653.0
+Chili,RChil7,Río Chili,-16.452637,-71.579167,2019-08-26,21.0,7.88,7.7,803.0
+Ocoña,QPino1,Quebrada Piñog,-15.776153,-72.886162,2012-12-03,14.3,8.49,7.56,211.0
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2012-12-04,14.3,8.49,7.56,211.0
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2013-11-21,13.52,8.83,6.81,212.2
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2013-11-21,13.52,8.83,6.81,212.2
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2014-04-10,11.3,7.77,7.88,118.8
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2014-04-10,11.3,7.77,7.88,118.8
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2015-09-22,11.5,8.31,6.89,204.2
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2016-05-17,11.4,7.63,8.3,196.3
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2016-11-23,14.0,6.3,6.85,241.0
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2017-09-13,10.8,8.04,7.56,220.5
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2018-05-09,12.9,7.31,9.2,145.5
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2019-04-10,13.4,7.7,7.36,171.3
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2019-10-29,15.3,8.39,7.66,204.4
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2020-11-06,16.0,7.8,7.8,248.6
+Ocoña,QPino1,Quebrada Piñog,-15.775887,-72.885773,2021-05-25,10.1,7.76,8.43,173.77
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2012-11-27,16.8,8.22,5.78,40.6
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2012-11-27,16.8,8.22,5.78,40.6
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2013-11-19,13.75,7.36,6.18,11.35
+Ocoña,QRedo1,Quebrada Redonda,-14.732824,-72.710897,2013-11-19,13.75,7.36,6.18,11.35
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2014-04-22,6.64,7.32,4.66,8.43
+Ocoña,QRedo1,Quebrada Redonda,-14.732824,-72.710897,2014-04-22,6.64,7.32,4.66,8.43
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2015-09-02,6.36,7.74,6.5,8.15
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2016-04-26,4.5,6.92,7.63,18.9
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2016-11-15,7.6,8.75,5.42,29.6
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2017-08-29,8.1,7.64,6.46,14.04
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2018-04-17,7.4,6.59,7.25,19.73
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2019-04-23,8.0,6.4,6.25,22.3
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2019-11-06,7.6,7.87,6.43,22.3
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2020-11-10,11.9,7.61,6.61,21.2
+Ocoña,QRedo1,Quebrada Redonda,-14.73286,-72.710869,2021-06-08,3.5,7.76,7.27,19.15
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2012-11-28,16.0,8.2,7.43,184.1
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2012-11-28,16.0,8.2,7.43,184.1
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2013-11-20,15.14,8.2,6.13,205.3
+Ocoña,RCota1,Río Cotahuasi,-15.126752,-72.766237,2013-11-20,15.1,8.2,6.13,205.3
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2014-04-22,12.7,7.6,5.7,90.3
+Ocoña,RCota1,Río Cotahuasi,-15.126752,-72.766237,2014-04-22,12.7,7.6,5.7,90.3
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2015-09-03,12.62,8.39,7.13,178.9
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2016-04-28,12.8,7.34,7.31,171.4
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2016-11-17,12.3,8.28,7.54,223.0
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2017-08-31,13.5,7.5,5.68,199.3
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2018-04-19,14.1,6.33,8.03,100.1
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2019-04-25,15.5,7.25,7.85,89.2
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2019-11-07,14.2,8.11,7.53,197.1
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2020-11-12,13.9,7.21,8.15,185.5
+Ocoña,RCota1,Río Cotahuasi,-15.126761,-72.766247,2021-06-10,8.0,7.39,8.41,124.8
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192361,-70.684781,2013-10-24,11.5,7.34,7.33,4100.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192146,-70.684518,2014-03-06,10.5,7.14,7.34,1527.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192329,-70.685333,2014-07-04,7.8,8.05,8.54,3950.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192329,-70.685333,2015-08-21,14.1,8.2,6.86,3840.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192329,-70.685333,2016-04-21,11.52,8.13,6.99,1184.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192329,-70.685333,2016-10-25,10.6,8.13,7.99,5640.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.99035,-71.639413,2017-08-05,26.7,7.69,8.06,1724.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192329,-70.685333,2017-10-05,17.0,8.2,6.85,4489.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.192329,-70.685333,2018-04-12,12.12,8.37,8.92,1588.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.195969,-70.687335,2019-04-11,11.3,8.42,7.84,1782.0
+Tambo,RTamb1,"Río Tambo, downstream of the confluence with Quebrada Yunga and Yunga Point",-16.195969,-70.687335,2019-10-15,12.6,8.28,8.05,4820.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.317403,-70.741733,2013-10-29,12.4,7.1,6.0,1890.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319827,-70.742465,2014-03-11,12.3,8.5,7.61,2650.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319746,-70.742474,2014-07-04,10.6,8.23,8.64,3970.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319746,-70.742474,2015-08-21,13.42,8.41,7.69,4010.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319746,-70.742474,2016-04-20,18.3,7.8,6.39,1002.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319746,-70.742474,2016-10-25,9.1,8.15,7.71,5830.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-17.030102,-71.691349,2017-08-05,22.4,7.51,8.68,1815.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319746,-70.742474,2017-10-05,16.8,8.3,6.8,4618.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.319746,-70.742474,2018-04-12,11.2,8.48,9.86,1673.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.31793,-70.742757,2019-04-11,11.1,8.52,7.69,1878.0
+Tambo,RTamb2,"Río Tambo, upstream of the village Lucco",-16.31793,-70.742757,2019-10-15,11.1,8.33,7.85,4880.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776107,-70.916021,2013-10-30,19.2,7.82,8.49,1940.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776575,-70.916213,2014-03-12,19.3,8.09,8.47,1903.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776869,-70.880396,2014-07-17,17.8,8.38,8.79,2760.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776869,-70.880396,2015-08-26,21.7,8.54,7.04,2800.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776869,-70.880396,2016-05-03,23.3,8.01,8.14,2240.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776869,-70.880396,2016-11-04,18.3,8.34,8.53,3350.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-17.103746,-71.745568,2017-09-05,26.8,7.42,8.63,1870.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776869,-70.880396,2017-10-11,24.56,8.29,8.13,2950.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.776869,-70.880396,2018-04-18,22.24,8.41,5.25,1743.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.775303,-70.910761,2019-04-05,21.5,8.22,7.64,1324.0
+Tambo,RTamb4,"Río Tambo, below the ""Chorro Bridge""",-16.775303,-70.910761,2019-10-22,19.0,8.03,8.15,2960.0
+Yauca,RCceñ1,Quebrada Jailpasca. downstream of the U.M. Apumayo-Sector Chaquipampa,-14.979107,-73.941354,2016-03-08,15.64,8.02,3.94,97.9
+Yauca,RCceñ1,"Quebrada Jailpasca, downstream of the U.M. Apumayo-Sector Chaquipampa",-14.979107,-73.941354,2016-06-24,10.1,7.46,4.68,202.4
+Yauca,RCceñ1,"Quebrada Jailpasca, downstream of the U.M. Apumayo-Sector Chaquipampa",-14.979107,-73.941354,2017-12-03,17.06,8.11,4.06,300.9
+Yauca,RCceñ1,"Quebrada Jailpasca, downstream of the U.M. Apumayo-Sector Chaquipampa",-14.979107,-73.941354,2018-09-10,17.91,9.05,4.21,203.0
+Yauca,RCceñ1,"Quebrada Jailpasca, downstream of the U.M. Apumayo-Sector Chaquipampa",-14.979107,-73.941354,2019-10-23,13.18,7.07,4.8,245.1
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2014-12-18,18.31,8.29,4.67,564.1
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2016-03-09,16.3,8.0,5.0,620.0
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2016-06-22,9.24,7.9,5.08,848.5
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2017-12-01,12.71,8.38,4.87,760.6
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2018-09-06,8.9,9.07,5.3,835.0
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2019-10-21,16.6,8.45,4.1,696.5
+Yauca,RSang1,"Río Sangarara, approximately 200m downstream from Sangarara Bridge",-14.978965,-73.813305,2020-10-29,17.42,8.48,4.5,710.8
+Yauca,RYauc1,"Río Acaville, 20 km east of confluence with Yauca",-15.405249,-74.239598,2014-12-18,23.39,8.16,7.14,1905.0
+Yauca,RYauc1,"Río Acaville, 20 km east of confluence with Yauca",-15.405249,-74.239598,2016-03-10,23.52,7.82,8.28,786.5
+Yauca,RYauc1,"Río Acaville, 20 km east of confluence with Yauca",-15.405249,-74.239598,2017-12-01,19.96,8.21,5.83,429.1
+Yauca,RYauc1,"Río Acaville, 20 km east of confluence with Yauca",-15.405249,-74.239598,2018-09-13,20.4,9.0,5.6,1014.0
+Yauca,RYauc1,"Río Acaville, 20 km east of confluence with Yauca",-15.405249,-74.239598,2019-10-17,22.98,6.5,5.25,721.0
+Yauca,RYauc1,"Río Acaville, 20 km east of confluence with Yauca",-15.405249,-74.239598,2020-10-30,23.01,7.95,5.5,1.261

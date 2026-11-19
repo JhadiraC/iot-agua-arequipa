@@ -1,0 +1,45 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# GCP / Service Account credentials (NEVER commit)
+*service-account*.json
+*service_account*.json
+*credentials*.json
+*gcp-key*.json
+*-key.json
+adc.json
+secrets/
+
+# Local databases
+local_dev.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / React / Vite
+node_modules/
+dashboard/dist/
+dashboard/build/
+.vite/
+npm-debug.log*
+
+# OS & Editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

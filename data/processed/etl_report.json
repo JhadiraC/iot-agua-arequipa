@@ -1,0 +1,212 @@
+{
+  "generated_at_utc": "2026-11-19T22:19:11Z",
+  "totals": {
+    "raw_rows": 1412,
+    "dropped_null_iot_params": 101,
+    "dropped_physical_anomalies": 5,
+    "clean_rows": 1306,
+    "valid_stations_count": 242,
+    "sample_15_stations_rows": 168
+  },
+  "by_watershed": {
+    "Camaná": {
+      "source_file": "Camana_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "sheet_name": "Camaná WQ Aqueous",
+      "detected_conductivity_column": "Electrical Conductivity μS/cm",
+      "raw_rows": 115,
+      "dropped_null_iot_params": 0,
+      "dropped_physical_anomalies": 0,
+      "clean_rows": 115,
+      "valid_stations_count": 46
+    },
+    "Chili": {
+      "source_file": "Chili_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "sheet_name": "Chili WQ Aqueous",
+      "detected_conductivity_column": "Electrical Conductivity (µS/cm)",
+      "raw_rows": 453,
+      "dropped_null_iot_params": 64,
+      "dropped_physical_anomalies": 0,
+      "clean_rows": 389,
+      "valid_stations_count": 58
+    },
+    "Ocoña": {
+      "source_file": "Ocona_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "sheet_name": "Ocoña WQ Aqueous",
+      "detected_conductivity_column": "Electrical Conductivity μS/cm",
+      "raw_rows": 307,
+      "dropped_null_iot_params": 0,
+      "dropped_physical_anomalies": 3,
+      "clean_rows": 304,
+      "valid_stations_count": 42
+    },
+    "Tambo": {
+      "source_file": "Tambo_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "sheet_name": "Tambo WQ Aqueous",
+      "detected_conductivity_column": "Electrical Conductivity (uS/cm)",
+      "raw_rows": 467,
+      "dropped_null_iot_params": 21,
+      "dropped_physical_anomalies": 1,
+      "clean_rows": 445,
+      "valid_stations_count": 83
+    },
+    "Yauca": {
+      "source_file": "Yauca_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "sheet_name": "Yauca WQ Aqueous",
+      "detected_conductivity_column": "Electrical Conductivity umho-Siemen",
+      "raw_rows": 70,
+      "dropped_null_iot_params": 16,
+      "dropped_physical_anomalies": 1,
+      "clean_rows": 53,
+      "valid_stations_count": 13
+    }
+  },
+  "physical_anomalies_discarded": [
+    {
+      "watershed": "Ocoña",
+      "source_file": "Ocona_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "excel_row": 175,
+      "station_id": "ROcon1",
+      "sample_date": "2019-04-17",
+      "water_temp_c": 18.7,
+      "ph": 7.75,
+      "dissolved_oxygen_mg_l": 717.0,
+      "electrical_conductivity_us_cm": 255.0,
+      "reasons": [
+        "dissolved_oxygen_mg_l=717.0 fuera de [0, 25]"
+      ]
+    },
+    {
+      "watershed": "Ocoña",
+      "source_file": "Ocona_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "excel_row": 183,
+      "station_id": "QJapa2",
+      "sample_date": "2019-04-06",
+      "water_temp_c": 15.7,
+      "ph": 7.06,
+      "dissolved_oxygen_mg_l": 180.1,
+      "electrical_conductivity_us_cm": 180.0,
+      "reasons": [
+        "dissolved_oxygen_mg_l=180.1 fuera de [0, 25]"
+      ]
+    },
+    {
+      "watershed": "Ocoña",
+      "source_file": "Ocona_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "excel_row": 263,
+      "station_id": "RChic",
+      "sample_date": "2012-12-04",
+      "water_temp_c": 0.3,
+      "ph": 32.56,
+      "dissolved_oxygen_mg_l": 8.15,
+      "electrical_conductivity_us_cm": 240.0,
+      "reasons": [
+        "ph=32.56 fuera de [0, 14]"
+      ]
+    },
+    {
+      "watershed": "Tambo",
+      "source_file": "Tambo_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "excel_row": 162,
+      "station_id": "RCaru1",
+      "sample_date": "2015-08-21",
+      "water_temp_c": 12.51,
+      "ph": 8.24,
+      "dissolved_oxygen_mg_l": 73.4,
+      "electrical_conductivity_us_cm": 446.5,
+      "reasons": [
+        "dissolved_oxygen_mg_l=73.4 fuera de [0, 25]"
+      ]
+    },
+    {
+      "watershed": "Yauca",
+      "source_file": "Yauca_Water_Quality_Data_Final_2024_7_13.xlsx",
+      "excel_row": 14,
+      "station_id": "RItañ1",
+      "sample_date": "2016-06-24",
+      "water_temp_c": 449.1,
+      "ph": 3.5,
+      "dissolved_oxygen_mg_l": 4.39,
+      "electrical_conductivity_us_cm": 540.8,
+      "reasons": [
+        "water_temp_c=449.1 fuera de [0, 50]"
+      ]
+    }
+  ],
+  "sample_15_stations_selected": {
+    "Camaná": [
+      {
+        "station_id": "QAroc1",
+        "records": 4
+      },
+      {
+        "station_id": "QElsa1",
+        "records": 4
+      },
+      {
+        "station_id": "RAnda1",
+        "records": 4
+      }
+    ],
+    "Chili": [
+      {
+        "station_id": "QAñas1",
+        "records": 20
+      },
+      {
+        "station_id": "RChil4",
+        "records": 20
+      },
+      {
+        "station_id": "RChil7",
+        "records": 20
+      }
+    ],
+    "Ocoña": [
+      {
+        "station_id": "QPino1",
+        "records": 15
+      },
+      {
+        "station_id": "QRedo1",
+        "records": 15
+      },
+      {
+        "station_id": "RCota1",
+        "records": 15
+      }
+    ],
+    "Tambo": [
+      {
+        "station_id": "RTamb1",
+        "records": 11
+      },
+      {
+        "station_id": "RTamb2",
+        "records": 11
+      },
+      {
+        "station_id": "RTamb4",
+        "records": 11
+      }
+    ],
+    "Yauca": [
+      {
+        "station_id": "RSang1",
+        "records": 7
+      },
+      {
+        "station_id": "RYauc1",
+        "records": 6
+      },
+      {
+        "station_id": "RCceñ1",
+        "records": 5
+      }
+    ]
+  },
+  "outputs": {
+    "clean_csv": "data/processed/arequipa_iot_clean.csv",
+    "sample_15_stations_csv": "data/processed/arequipa_sample_15_stations.csv",
+    "etl_report_json": "data/processed/etl_report.json"
+  }
+}

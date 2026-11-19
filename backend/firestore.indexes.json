@@ -1,0 +1,66 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "watershed", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "station_id", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "is_alert", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "watershed", "order": "ASCENDING" },
+        { "fieldPath": "station_id", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "watershed", "order": "ASCENDING" },
+        { "fieldPath": "is_alert", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "station_id", "order": "ASCENDING" },
+        { "fieldPath": "is_alert", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "telemetry",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "watershed", "order": "ASCENDING" },
+        { "fieldPath": "station_id", "order": "ASCENDING" },
+        { "fieldPath": "is_alert", "order": "ASCENDING" },
+        { "fieldPath": "ingested_at", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

@@ -1,0 +1,26 @@
+# Local environment & secrets
+.env
+.env.*
+*service-account*.json
+*service_account*.json
+*credentials*.json
+
+# Local databases & test artifacts
+*.db
+*.sqlite
+*.sqlite3
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+pytest.ini
+README.md
+firestore.indexes.json
+
+# Python caches & virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
