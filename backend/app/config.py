@@ -5,7 +5,21 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 BACKEND_DIR = Path(__file__).resolve().parent.parent
+
+# Load backend/.env for local execution without overriding explicit env vars
+load_dotenv(BACKEND_DIR / ".env", override=False)
+
+# Normalize relative GOOGLE_APPLICATION_CREDENTIALS against backend/
+_creds_env = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "").strip()
+if _creds_env:
+    _creds_path = Path(_creds_env)
+    if not _creds_path.is_absolute():
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = str(
+            (BACKEND_DIR / _creds_path).resolve()
+        )
 
 # ---------------------------------------------------------------------------
 # Referential water-quality alert thresholds (configurable constants)
