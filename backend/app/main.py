@@ -5,8 +5,9 @@ from __future__ import annotations
 import secrets
 from functools import lru_cache
 
-from fastapi import Depends, FastAPI, Header, HTTPException, Query, status
+from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
 from app.config import get_allowed_origins, get_iot_api_key, get_storage_mode
 from app.repository import TelemetryRepository, create_repository
@@ -60,6 +61,25 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+    @application.exception_handler(Exception)
+    async def handle_unexpected_error(
+        request: Request, exc: Exception
+    ) -> JSONResponse:
+        if exc.__class__.__name__ == "ResourceExhausted":
+            return JSONResponse(
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                content={
+                    "detail": (
+                        "Cuota diaria gratuita de Cloud Firestore alcanzada (429). "
+                        "Cambia STORAGE_MODE=local en backend/.env o espera al reinicio diario."
+                    )
+                },
+            )
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={"detail": f"Error interno del servidor: {exc.__class__.__name__}"},
+        )
 
     @application.get("/health", response_model=HealthResponse, tags=["Health"])
     def health_check() -> HealthResponse:

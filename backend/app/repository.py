@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+import time
 import uuid
 from abc import ABC, abstractmethod
 from collections import defaultdict
@@ -342,6 +343,7 @@ class FirestoreRepository(TelemetryRepository):
 
     TELEMETRY_COLLECTION = "telemetry"
     STATIONS_COLLECTION = "stations"
+    CACHE_TTL_SECONDS = 60.0
 
     def __init__(self, project_id: str | None = None) -> None:
         from google.cloud import firestore  # lazy import for local-mode portability
@@ -350,6 +352,12 @@ class FirestoreRepository(TelemetryRepository):
         self.client = (
             firestore.Client(project=project_id) if project_id else firestore.Client()
         )
+        self._summary_cache: tuple[float, SummaryResponse] | None = None
+        self._stations_cache: dict[str | None, tuple[float, list[StationStatus]]] = {}
+
+    def _invalidate_caches(self) -> None:
+        self._summary_cache = None
+        self._stations_cache.clear()
 
     def save_telemetry(self, payload: TelemetryIn) -> TelemetryRecord:
         now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ")
@@ -397,6 +405,7 @@ class FirestoreRepository(TelemetryRepository):
             station_payload["longitude"] = payload.longitude
 
         station_ref.set(station_payload, merge=True)
+        self._invalidate_caches()
         return record
 
     def list_telemetry(
@@ -406,27 +415,64 @@ class FirestoreRepository(TelemetryRepository):
         only_alerts: bool = False,
         limit: int = 100,
     ) -> list[TelemetryRecord]:
+        from google.api_core.exceptions import FailedPrecondition
         from google.cloud.firestore_v1.base_query import FieldFilter
 
-        query = self.client.collection(self.TELEMETRY_COLLECTION)
+        base_query = self.client.collection(self.TELEMETRY_COLLECTION)
         if watershed:
-            query = query.where(filter=FieldFilter("watershed", "==", watershed))
+            base_query = base_query.where(filter=FieldFilter("watershed", "==", watershed))
         if station_id:
-            query = query.where(filter=FieldFilter("station_id", "==", station_id))
+            base_query = base_query.where(filter=FieldFilter("station_id", "==", station_id))
         if only_alerts:
-            query = query.where(filter=FieldFilter("is_alert", "==", True))
+            base_query = base_query.where(filter=FieldFilter("is_alert", "==", True))
 
-        query = query.order_by(
+        indexed_query = base_query.order_by(
             "ingested_at", direction=self._firestore.Query.DESCENDING
         ).limit(limit)
 
         results: list[TelemetryRecord] = []
-        for snap in query.stream():
-            data = snap.to_dict() or {}
-            results.append(TelemetryRecord(id=snap.id, **data))
-        return results
+        try:
+            for snap in indexed_query.stream():
+                data = snap.to_dict() or {}
+                results.append(TelemetryRecord(id=snap.id, **data))
+            return results
+        except FailedPrecondition:
+            # Fallback when composite index is not yet created/ready in Firestore:
+            # use at most ONE equality filter (no composite index required),
+            # then apply remaining filters and sort in memory.
+            fallback_query = self.client.collection(self.TELEMETRY_COLLECTION)
+            if watershed:
+                fallback_query = fallback_query.where(
+                    filter=FieldFilter("watershed", "==", watershed)
+                )
+            elif station_id:
+                fallback_query = fallback_query.where(
+                    filter=FieldFilter("station_id", "==", station_id)
+                )
+            elif only_alerts:
+                fallback_query = fallback_query.where(
+                    filter=FieldFilter("is_alert", "==", True)
+                )
+
+            for snap in fallback_query.stream():
+                data = snap.to_dict() or {}
+                rec = TelemetryRecord(id=snap.id, **data)
+                if watershed and rec.watershed != watershed:
+                    continue
+                if station_id and rec.station_id != station_id:
+                    continue
+                if only_alerts and not rec.is_alert:
+                    continue
+                results.append(rec)
+            results.sort(key=lambda r: r.ingested_at, reverse=True)
+            return results[:limit]
 
     def list_stations(self, watershed: str | None = None) -> list[StationStatus]:
+        now = time.monotonic()
+        cached = self._stations_cache.get(watershed)
+        if cached and (now - cached[0]) < self.CACHE_TTL_SECONDS:
+            return cached[1]
+
         from google.cloud.firestore_v1.base_query import FieldFilter
 
         query = self.client.collection(self.STATIONS_COLLECTION)
@@ -451,9 +497,16 @@ class FirestoreRepository(TelemetryRepository):
                 )
             )
         stations.sort(key=lambda s: (s.watershed, s.station_id))
+        self._stations_cache[watershed] = (now, stations)
         return stations
 
     def get_summary(self) -> SummaryResponse:
+        now = time.monotonic()
+        if (
+            self._summary_cache
+            and (now - self._summary_cache[0]) < self.CACHE_TTL_SECONDS
+        ):
+            return self._summary_cache[1]
         # Count stations from lightweight stations collection
         station_snaps = list(
             self.client.collection(self.STATIONS_COLLECTION).select(["watershed"]).stream()
@@ -522,13 +575,15 @@ class FirestoreRepository(TelemetryRepository):
         alert_pct = (
             round((total_alerts / total_readings) * 100.0, 2) if total_readings else 0.0
         )
-        return SummaryResponse(
+        summary = SummaryResponse(
             total_readings=total_readings,
             total_stations=total_stations,
             total_alerts=total_alerts,
             alert_percentage=alert_pct,
             by_watershed=by_watershed,
         )
+        self._summary_cache = (now, summary)
+        return summary
 
 
 def create_repository() -> TelemetryRepository:

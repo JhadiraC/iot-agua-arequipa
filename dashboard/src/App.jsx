@@ -16,8 +16,8 @@ import { TelemetryCharts } from "./components/TelemetryCharts";
 export default function App() {
   const [selectedWatershed, setSelectedWatershed] = useState("Todas");
   const [selectedStation, setSelectedStation] = useState("");
-  const [pollMs, setPollMs] = useState(10000);
-  const [autoRefresh, setAutoRefresh] = useState(true);
+  const [pollMs, setPollMs] = useState(30000);
+  const [autoRefresh, setAutoRefresh] = useState(false);
 
   const [health, setHealth] = useState(null);
   const [summary, setSummary] = useState(null);
